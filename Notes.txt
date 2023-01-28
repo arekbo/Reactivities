@@ -62,3 +62,7 @@ dotnet new gitignore
 git status
 
 git init
+
+********
+
+npx create-react-app client-app --use-npm --template typescript
