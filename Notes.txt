@@ -74,3 +74,5 @@ npx create-react-app client-app --use-npm --template typescript
 
 
 npm install mobx mobx-react-lite
+
+npm install react-router-dom
