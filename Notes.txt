@@ -1,3 +1,7 @@
+To open GIT BASH type bash in terminal and it will change the type of terminal to bash
+
+****************************************************************************************
+
 Write-Host "About to Create the directory" -ForegroundColor Green
 
 mkdir Reactivities
@@ -22,6 +26,7 @@ dotnet add reference ../Application/Application.csproj
 cd ../Application
 dotnet add reference ../Domain/Domain.csproj
 dotnet add reference ../Persistence/Persistence.csproj
+
 cd ../Persistence
 dotnet add reference ../Domain/Domain.csproj
 cd ..
@@ -31,7 +36,7 @@ dotnet restore
 
 Write-Host "Finished!" -ForegroundColor Green
 
-**********************************************************************************
+****************************************************************************************
 
 dotnet sln list
 
@@ -66,3 +71,6 @@ git init
 ********
 
 npx create-react-app client-app --use-npm --template typescript
+
+
+npm install mobx mobx-react-lite
