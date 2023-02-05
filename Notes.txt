@@ -76,3 +76,11 @@ npx create-react-app client-app --use-npm --template typescript
 npm install mobx mobx-react-lite
 
 npm install react-router-dom
+
+https://reactrouter.com/en/main
+https://www.nuget.org/packages/dotnet-ef#versions-body-tab
+
+npm install react-calendar
+
+to install Typescript types
+npm install @types/react-calendar
