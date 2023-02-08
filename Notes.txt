@@ -84,3 +84,7 @@ npm install react-calendar
 
 to install Typescript types
 npm install @types/react-calendar
+
+npm install react-toastify
+
+dotnet ef database drop -s API -p Persistence
