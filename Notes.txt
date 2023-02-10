@@ -87,4 +87,49 @@ npm install @types/react-calendar
 
 npm install react-toastify
 
+z root:
 dotnet ef database drop -s API -p Persistence
+
+z client-app:
+npm install formik
+
+npm install yup
+types:
+npm install @types/yup --save-dev
+
+npm WARN deprecated @types/yup@0.32.0: This is a stub types definition. yup provides its own type definitions, so you do not need this installed.
+so:
+npm remove @types/yup --save-dev
+
+npm install react-datepicker
+albo jak "unable to resolve dependency"
+npm install react-datepicker --legacy-peer-deps
+types:
+npm install @types/react-datepicker --save-dev
+
+npm ls date-fns
+
+$ npm ls date-fns
+client-app@0.1.0 D:\Development\ASP.NET CORE - REACT\Reactivities\client-app
+├─┬ @types/react-datepicker@4.8.0
+│ └── date-fns@2.29.3
+└─┬ react-datepicker@4.10.0
+  └── date-fns@2.29.3 deduped
+
+  npm install date-fns@2.29.3
+
+rezultat:
+
+arek@AREK-PC  /d/Development/ASP.NET CORE - REACT/Reactivities/client-app (main)  
+$ npm ls date-fns
+client-app@0.1.0 D:\Development\ASP.NET CORE - REACT\Reactivities\client-app
+├─┬ @types/react-datepicker@4.8.0
+│ └── date-fns@2.29.3 deduped
+├── date-fns@2.29.3
+└─┬ react-datepicker@4.10.0
+  └── date-fns@2.29.3 deduped
+
+
+
+
+
