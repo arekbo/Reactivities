@@ -131,5 +131,35 @@ client-app@0.1.0 D:\Development\ASP.NET CORE - REACT\Reactivities\client-app
 
 
 
+Identity:
+nuget gallery
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
+z root:
+dotnet ef migrations add IdentityAdded -p Persistence -s API
+
+
+Done. To undo this action, use 'ef migrations remove'
+
+dotnet ef migrations remove -p Persistence -s API
+
+
+The migration '20230211122206_IdentityAdded' has already been applied to the database. Revert it and try again. If the migration has been applied to other databases, 
+consider reverting its changes using a new migration instead.
+
+
+dotnet ef update-database  InitiallCreate  -p Persistence -s API
+dotnet ef migrations remove -p Persistence -s API
+
+restore:
+dotnet restore
+
+dotnet --info
+
+Token:
+nuget gallery into API project
+System.IdentityModel.Tokens.Jwt
+
+into API
+Microsoft.AspNetCore.Authentication.JwtBearer
 
