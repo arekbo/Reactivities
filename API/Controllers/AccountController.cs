@@ -52,7 +52,7 @@ namespace API.Controllers
 
             if (await _userManager.Users.AnyAsync(x => x.Email == registerDto.Email))
             {
-                ModelState.AddModelError("email", "Email taken");
+                ModelState.AddModelError("email", "Email is already taken");
                 return ValidationProblem();
             }
 
