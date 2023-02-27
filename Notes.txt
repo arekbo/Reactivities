@@ -163,3 +163,22 @@ System.IdentityModel.Tokens.Jwt
 into API
 Microsoft.AspNetCore.Authentication.JwtBearer
 
+into ROOT (Reactivities)
+dotnet ef migrations add ActivityAttendee -p Persistence -s API
+
+dotnet ef migrations remove -p Persistence -s API
+
+
+dotnet new classlib -n Infrastructure
+dotnet sln add Infrastructure
+
+from within Infrastructure:
+cd Infrastructure
+dotnet add reference ../Application
+
+from within API
+cd API
+dotnet add reference ../Infrastructure
+
+
+dotnet ef database drop -p Persistence -s API
